@@ -10,20 +10,20 @@ A proposta do desafio é construir uma API que gerencie tarefas (tasks), utiliza
 
 A API permite realizar as seguintes operações com tasks:
 
-- ✅ **Criar uma task**  
-  Envia um `POST` para `/tasks` com `title` e `description`.
+**Criar uma task**  
+Envia um `POST` para `/tasks` com `title` e `description`.
 
-- 📋 **Listar todas as tasks**  
-  Envia um `GET` para `/tasks` para retornar todas as tarefas cadastradas.
+**Listar todas as tasks**  
+Envia um `GET` para `/tasks` para retornar todas as tarefas cadastradas.
 
-- ✏️ **Atualizar uma task pelo `id`**  
-  Envia um `PUT` para `/tasks/:id` para atualizar os campos `title` e `description`.
+**Atualizar uma task pelo `id`**  
+Envia um `PUT` para `/tasks/:id` para atualizar os campos `title` e `description`.
 
-- ❌ **Remover uma task pelo `id`**  
-  Envia um `DELETE` para `/tasks/:id`.
+**Remover uma task pelo `id`**  
+Envia um `DELETE` para `/tasks/:id`.
 
-- ✔️ **Marcar uma task como completa pelo `id`**  
-  Envia um `PATCH` para `/tasks/:id/complete` para marcar a task como finalizada.
+**Marcar uma task como completa pelo `id`**  
+Envia um `PATCH` para `/tasks/:id/complete` para marcar a task como finalizada.
 
 ---
 
@@ -37,11 +37,3 @@ A funcionalidade extra e mais desafiadora deste projeto é a **importação em m
 - Um **iterador assíncrono** percorre linha por linha do arquivo.
 - Para cada linha, é enviada uma requisição `POST` para `/tasks`, criando a task com os dados lidos.
 - Um script auxilia na geração automática do arquivo CSV e no processo de leitura/importação.
-
-
-📁 Estrutura de Arquivos Importantes
-src/server.js: ponto de entrada da aplicação.
-
-src/routes.js: define as rotas da API.
-
-src/csv/import-csv.js: responsável por ler o CSV e fazer a importação das tasks.
