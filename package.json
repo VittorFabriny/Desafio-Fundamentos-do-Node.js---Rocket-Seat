@@ -1,0 +1,19 @@
+{
+  "name": "desafio-01",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "createSheet": "node src/streams/create-sheet.js",
+    "uploadSheet": "node src/streams/upload-sheet.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "csv": "^6.3.11",
+    "node-fetch": "^3.3.2"
+  }
+}
