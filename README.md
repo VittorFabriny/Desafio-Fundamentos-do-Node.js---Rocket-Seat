@@ -37,3 +37,11 @@ A funcionalidade extra e mais desafiadora deste projeto é a **importação em m
 - Um **iterador assíncrono** percorre linha por linha do arquivo.
 - Para cada linha, é enviada uma requisição `POST` para `/tasks`, criando a task com os dados lidos.
 - Um script auxilia na geração automática do arquivo CSV e no processo de leitura/importação.
+
+
+📁 Estrutura de Arquivos Importantes
+src/server.js: ponto de entrada da aplicação.
+
+src/routes.js: define as rotas da API.
+
+src/csv/import-csv.js: responsável por ler o CSV e fazer a importação das tasks.
